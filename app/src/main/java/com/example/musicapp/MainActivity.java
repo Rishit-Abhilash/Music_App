@@ -1,5 +1,4 @@
 package com.example.musicapp;
-
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -7,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
     @Override
@@ -34,5 +33,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
             finish(); // Prevent going back to MainActivity
         }
+
     }
 }

@@ -5,16 +5,13 @@ import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import adapter.CategoryAdapter;
 import models.CategoryModel;
-
 import com.example.musicapp.databinding.ActivityHomeBinding;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
-
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {

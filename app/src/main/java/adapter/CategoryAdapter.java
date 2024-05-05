@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.musicapp.SongsListActivity;
 import com.example.musicapp.databinding.CategoryItemRecyclerRowBinding;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
@@ -40,13 +41,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
                     .apply(RequestOptions.bitmapTransform(new RoundedCorners(32)))
                     .into(binding.coverImageView);
 
-//            binding.getRoot().setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    SongsListActivity.setCategory(Category);
-//                    context.startActivity(new Intent(context, SongsListActivity.class));
-//                }
-//            });
+            binding.getRoot().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    SongsListActivity.setCategory(Category);
+                    context.startActivity(new Intent(context, SongsListActivity.class));
+                }
+            });
         }
     }
 
